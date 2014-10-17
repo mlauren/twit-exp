@@ -16,5 +16,6 @@ T.post('statuses/update', { status: 'hello my friends' }, function(err, data, re
 
 T.get('users/show', { screen_name: "MarshallJRJ" }, function(err, data, response) {
 	console.log(data)
+	console.log(data.status.id)
   	console.log(err)
 })
